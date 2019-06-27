@@ -2,6 +2,6 @@ from django.urls import path
 from band import views
 
 urlpatterns = [
-    path('band', views.snippet_list),
-    path('band/<int:pk>', views.snippet_detail),
+    path('band/', views.BandList.as_view()),
+    # path('band/<int:pk>/', views.SnippetDetail.as_view()),
 ]
